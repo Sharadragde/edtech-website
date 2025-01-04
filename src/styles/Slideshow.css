@@ -1,0 +1,77 @@
+.slideshow-container {
+  width: 600px;  /* Set the width of the slideshow container */
+  height: 400px; /* Set the height of the slideshow */
+  overflow: hidden; /* Hide anything outside the container */
+  position: relative;
+  margin: 0 auto; /* Center the slideshow */
+}
+
+.slideshow-images {
+  position: relative;
+}
+
+.mySlides {
+  display: none; /* Hide all images by default */
+  width: 100%; /* Each image takes full width of container */
+  height: auto;
+}
+
+img {
+  width: 100%; /* Make image scale to fit the container */
+  height: auto;
+}
+
+/* Prev/Next buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Dots container styles */
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5); /* Inactive dot color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #fff; /* Active dot color */
+}
+
+.dot:hover {
+  background-color: #aaa; /* Hover effect */
+}
